@@ -7,12 +7,12 @@
 <section id="about">
 	<div class="info">
 		<h2>
-			This is a catchy headline that
-			<SparklingHighlight color="secondary">sparkles!</SparklingHighlight>
+			<SparklingHighlight color="secondary">3D</SparklingHighlight>
+			Web Developer
 		</h2>
 		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum velit voluptatibus commodi
-			autem provident quam labore, libero beatae praesentium voluptate?
+			Bringing Innovative and Immersive User Experiences to Life with a Diverse Skillset and a
+			Passion for Creativity.
 		</p>
 		<div class="socials">
 			<span>Socials:</span>
@@ -20,10 +20,7 @@
 		</div>
 	</div>
 	<div class="image">
-		<Image
-			src="/images/sample-image.png"
-			alt="Sample for the static template"
-		/>
+		<Image src="/images/avatar.png" alt="Sample for the static template" />
 	</div>
 </section>
 

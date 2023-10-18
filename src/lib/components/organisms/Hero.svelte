@@ -6,22 +6,22 @@
 </script>
 
 <section id="hero">
-	<h1 class="hello">This is a SvelteKit Static Blog Template!</h1>
+	<h1 class="hello">李治禹的个人网站</h1>
 	<p class="intro">
-		<span class="left">It supports Markdown,</span>
-		<span class="right">and is really fast.</span>
+		<span class="center">Li Zhiyu's Personal Website</span>
+		<!-- <span class="right">and is really fast.</span> -->
 	</p>
 	<div class="ctas">
-		<Sparkles>
-			<Button href="https://github.com/matfantinel/sveltekit-static-blog-template">
-				<GitHubIcon slot="icon" />
-				Source Code
-			</Button>
-		</Sparkles>
-		<Button color="primary" href="https://histoire-sveltekit-static-blog-template.vercel.app/">
-			<FeaturesIcon slot="icon" />
-			Components
+		<Button ref="head-btn" href="https://github.com/lizhiyu-me">
+			<GitHubIcon slot="icon" />
+			Github
 		</Button>
+		<!-- <Sparkles> -->
+		<Button color="secondary" ref="head-btn" href="https://dogdogame.com/">
+			<FeaturesIcon slot="icon" />
+			WIP
+		</Button>
+		<!-- </Sparkles> -->
 	</div>
 </section>
 
@@ -58,6 +58,9 @@
 			.right {
 				text-align: right;
 			}
+			.center {
+				text-align: center;
+			}
 
 			@include for-phone-only {
 				display: none;
@@ -71,6 +74,10 @@
 			justify-content: center;
 			gap: 10px;
 			width: 100%;
+		}
+		:global([ref='head-btn']) {
+			// order: 2;
+			flex: 0 0 150px;
 		}
 	}
 </style>
