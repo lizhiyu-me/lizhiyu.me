@@ -14,7 +14,10 @@ const config = {
 		adapter: adapter(),
 		prerender: {
 			handleHttpError: 'warn'
-		}
+		},
+		paths: {
+            base: process.env.NODE_ENV === 'production' ? '/lizhiyu.me' : '',
+        }
 	},
 	preprocess: [
 		vitePreprocess(),
