@@ -1,3 +1,11 @@
+---
+title: Unit Test Using Jest
+slug: jest
+coverImage: /images/posts/blog-posts.jpg
+date: 2021-05-30T21:55:15.361Z
+excerpt:
+tags:
+---
 ## Unit Test Using Jest
 
 >Recently, I make a package about poker ruler logic from the project in the series articles which is writing. I need to check the correction of each poker rule when I change the code involved. So I add Jest to have a auto unit test.

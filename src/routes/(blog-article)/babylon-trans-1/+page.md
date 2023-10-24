@@ -1,3 +1,11 @@
+---
+title: 从零开始，与BabylonJS一起，开启你的Web3D之旅吧
+slug: babylon-trans-1
+coverImage: /images/posts/blog-posts.jpg
+date: 2021-08-31T21:55:15.361Z
+excerpt:
+tags:
+---
 ## 从零开始，与BabylonJS一起，开启你的Web3D之旅吧
 
 ![Screen Shot 2022-07-22 at 00.33.32.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1658421252897/Jwqbfh4sf.png align="left")

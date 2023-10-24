@@ -1,3 +1,11 @@
+---
+title: Get Enums (Enumerations) In Javascript | Using JS Doc
+slug: enum-js
+coverImage: /images/posts/blog-posts.jpg
+date: 2021-05-10T21:55:15.361Z
+excerpt:
+tags:
+---
 ## Get Enums (Enumerations) In Javascript | Using JS Doc
 
 >When I write javascript, I encounter a problem that there is no enum in javascript, and I accustomed to use enum to organise my code when write typescript. So I want to get a resolution to use enum in javascript.

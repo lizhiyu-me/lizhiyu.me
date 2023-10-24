@@ -1,3 +1,11 @@
+---
+title: The powerful and useful tool - NPM Scripts
+slug: npm-script
+coverImage: /images/posts/blog-posts.jpg
+date: 2021-06-07T21:55:15.361Z
+excerpt:
+tags:
+---
 ## The powerful and useful tool - NPM Scripts
 
 >In the project which the series articles introduce, we should generate the script file from <code>.proto</code> file, debug by starting client and server process.  It's not convenient to excute the command repeatly. The solution to make development simple is config the commands in npm scripts.

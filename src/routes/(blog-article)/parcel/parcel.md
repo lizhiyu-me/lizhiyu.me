@@ -1,3 +1,11 @@
+---
+title: Utilize Parcel  To Enjoy  TypeScrpit Out Of The Box
+slug: parcel
+coverImage: /images/posts/blog-posts.jpg
+date: 2021-06-14T21:55:15.361Z
+excerpt:
+tags:
+---
 ## Utilize Parcel  To Enjoy  TypeScrpit Out Of The Box
 
 >If you are code with TypeScript mostly, you may counter some hassles when running or debugging with tranditional web tools. Parcel may be the hassles killer.

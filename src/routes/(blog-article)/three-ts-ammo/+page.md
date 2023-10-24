@@ -1,3 +1,11 @@
+---
+title: Three.js + Typescript + Ammo.js | A Tiny Shooter Game
+slug: three-ts-ammo
+coverImage: /images/posts/blog-posts.jpg
+date: 2021-07-23T21:55:15.361Z
+excerpt:
+tags:
+---
 ## Three.js + Typescript + Ammo.js | A Tiny Shooter Game
 
 按照计划，利用Three.js和Ammo.js制作一个物理小游戏.
