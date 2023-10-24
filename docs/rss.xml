@@ -23,6 +23,1221 @@
     </image>
     
         <item>
+          <guid>https://sveltekit-static-blog-template.vercel.app//babylon-trans-2</guid>
+          <title>熟悉熟悉官方文档，逐步深入Babylon.js</title>
+          <description>null</description>
+          <link>https://sveltekit-static-blog-template.vercel.app//babylon-trans-2</link>
+          <pubDate>Thu, 09 Sep 2021 05:55:15 +0800</pubDate>
+          
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://sveltekit-static-blog-template.vercel.app//babylon-trans-2">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <h3 id="文档的组织结构"><a class="heading-link" title="Permalink" aria-hidden="true" href="#文档的组织结构"><span>#</span></a>文档的组织结构</h3>
+<hr>
+<p>通过前一篇文章的了解，我们会对Babylon.js有了一个大致的了解，整个文档主要是想带你逐步深入掌握这个Babylon.js所提供的所有内容。
+内容主要分为一个概览和9个主要部分，这些部分包含章节，还有API详解和强大的文档和playground搜索功能。</p>
+<p>- 1.Babylon.js特性 -
+Babylon.js是一个功能完备的游戏和渲染引擎，具有广泛的特性。这个部分将带你了解这些特性，并帮助你编码和使用它们。\
+- 2.将Babylon.js添加到你的Web项目中 -
+有多种方式可以在你的web应用中使用Babylon.js并设置Babylon.js项目。通过这个部分内容，你能了解到如何轻松地将Babylon.js融入自己的项目，并打造出别具一格的产品，并且还为你提供一些项目模板和支持。\
+- 3.Playground -
+对Babylon.js的核心资源进行详细的查看，了解如何使用它以及它所提供的许多功能设施，包括搜索所有playground以查找其他人所做的示例（这一点真心觉得很棒）。\
+- 4.工具和资源 -
+Babylon.js有许多令人难以置信的工具，使开发过程简单而愉快。它还有几个内容库供你完全免费使用。这个部分将帮助你理解并利用他们。\
+- 5.为Babylon.js准备素材 -
+从模型和动画，到纹理，LUTS和HDR图像，在这个部分学习准备Babylon.js内容的工作流和方法。\
+- 6.Babylon.js跨平台 -
+在这个部分，你将学习如何扩展Babylon.js，并使用它开发几乎任何你能想象的平台的原生应用。\
+- 7.贡献 -
+对于那些想要扩展Babylon.js边界的人，这个部分描述了需要什么以及如何为Babylon.js的代码库和文档做出贡献。\
+- 8.引导式学习 -
+有时候边做边学是最好的。这个部分帮助你做到这一点。这些逐步的文章和教程将帮助你从社区的一些最好和最聪明的老师那里学习（babylon.js
+社区的维护者似乎是真的闲，有时候很简单甚至看起来有些幼稚的问题都会得到很详细的回答，这一点是真的佩服）。\
+-9.社区扩展 -
+在这个部分，你将找到由极其有才华和热情的社区构建的对Babylon.js的令人难以置信的资源和扩展。</p>
+<h3 id="如何去使用文档"><a class="heading-link" title="Permalink" aria-hidden="true" href="#如何去使用文档"><span>#</span></a>如何去使用文档</h3>
+<hr>
+<p>Babylon.js是一个丰富的API，希望尽可能简单地利用GPU的强大功能来提升浏览器的上网体验。你可以通过用javascript或typescript编写Babylon.js场景代码来利用这个强大的API。为了保持一致性并最大化文档的可访问性，这些页面中找到的所有示例代码都将用javascript提供。</p>
+<p>文档页面布局有几个特性，你需要了解这些特性，以便在学习旅程中获得最大的收益。
+首先，最左边的面板是导航窗格。这个窗格是你导航到想去的地方的方式。</p>
+<p>![Navigation Pane](<a href="https://doc.babylonjs.com/img/home/home1.jpg" rel="nofollow">https://doc.babylonjs.com/img/home/home1.jpg</a> align=“left”)</p>
+<p>接下来是内容窗格。它位于中间，包含主要的内容和信息。</p>
+<p>![Content Pane](<a href="https://doc.babylonjs.com/img/home/home2.jpg" rel="nofollow">https://doc.babylonjs.com/img/home/home2.jpg</a> align=“left”)</p>
+<p>一些页面有很多信息，这些信息被组织成子部分。目录窗格使得在较长的页面中导航变得容易。</p>
+<p>![Table of Contents](<a href="https://doc.babylonjs.com/img/home/home4.jpg" rel="nofollow">https://doc.babylonjs.com/img/home/home4.jpg</a> align=“left”)</p>
+<p>右边的面板是示例窗格。它提供了对当前页面上每个playground（实时示例）的快速访问。</p>
+<p>![Examples Pane](<a href="https://doc.babylonjs.com/img/home/home3.jpg" rel="nofollow">https://doc.babylonjs.com/img/home/home3.jpg</a> align=“left”)</p>
+<p>最后，如果你在示例窗格中选择任何一个示例，它将在页面内容顶部的playground窗格内加载该示例。</p>
+<p>![Examples Pane](<a href="https://doc.babylonjs.com/img/home/home5.jpg" rel="nofollow">https://doc.babylonjs.com/img/home/home5.jpg</a> align=“left”)</p>
+<h3 id="关于版本控制的说明"><a class="heading-link" title="Permalink" aria-hidden="true" href="#关于版本控制的说明"><span>#</span></a>关于版本控制的说明</h3>
+<hr>
+<p>Babylon.js文档是以Babylon.js的最新主版本为参考编写的。<a href="https://doc.babylonjs.com/typedoc" rel="nofollow">API 文档</a>是针对最新的每日构建生成的。</p>
+<p>如果你想使用最新版本在本地安装Babylon.js，请从<a href="https://www.npmjs.com/package/@babylonjs/core" rel="nofollow">npm页面</a>选择最新的发布版本，然后运行：</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">npm i @babylonjs/core@preview</code><!-- HTML_TAG_END --></pre>
+<p>不要对使用最新版本感到害怕。Babylon的npm发布版本被认为是稳定的，并且已经过团队的全面测试。</p>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>          
+        </item>
+      
+        <item>
+          <guid>https://sveltekit-static-blog-template.vercel.app//babylon-trans-1</guid>
+          <title>从零开始，与BabylonJS一起，开启你的Web3D之旅吧</title>
+          <description>null</description>
+          <link>https://sveltekit-static-blog-template.vercel.app//babylon-trans-1</link>
+          <pubDate>Wed, 01 Sep 2021 05:55:15 +0800</pubDate>
+          
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://sveltekit-static-blog-template.vercel.app//babylon-trans-1">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <h2 id="从零开始与babylonjs一起开启你的web3d之旅吧"><a class="heading-link" title="Permalink" aria-hidden="true" href="#从零开始与babylonjs一起开启你的web3d之旅吧"><span>#</span></a>从零开始，与BabylonJS一起，开启你的Web3D之旅吧</h2>
+<p>![Screen Shot 2022-07-22 at 00.33.32.png](<a href="https://cdn.hashnode.com/res/hashnode/image/upload/v1658421252897/Jwqbfh4sf.png" rel="nofollow">https://cdn.hashnode.com/res/hashnode/image/upload/v1658421252897/Jwqbfh4sf.png</a> align=“left”)</p>
+<blockquote><p>欢迎来到 BabylonJS 零基础教程，本教程为萌新导向。无论你是Web开发的专家，富有想象力的设计师，还是充满好奇心的学生，只要你对3D相关的内容感兴趣。本教程都是你学习BabylonJS的绝佳开始，我们强烈建议每一个BabylonJS的初学者都从本教程开始学习。</p></blockquote>
+<p>本教程将与你一起，在浏览器上打造一个BabylonJS的小项目。你将了解到BabylonJS的演习场（playground），从最基础的引擎核心开始，完成一个可供发布的.html网页文件。</p>
+<h3 id="演习场playground"><a class="heading-link" title="Permalink" aria-hidden="true" href="#演习场playground"><span>#</span></a>演习场（playground）</h3>
+<p>演习场是你开发BabylonJS程序最重要的工具，注意，没有之一。</p>
+<p>![playground.jpeg](<a href="https://cdn.hashnode.com/res/hashnode/image/upload/v1658421347293/kOkoHCp2b.jpeg" rel="nofollow">https://cdn.hashnode.com/res/hashnode/image/upload/v1658421347293/kOkoHCp2b.jpeg</a> align=“left”)</p>
+<p>在演习场中，你可以随时随地实践你的想法，打造你的实验项目。将代码写入左侧的类似VS Code的编辑界面中，在右侧就能立马运行显示结果。</p>
+<p>演习场将是你学习旅途中的贴心小伙伴，因为它提供了全宇宙最科学的循环学习体系，输入代码-&gt;察看结果，让你在反复实践中找到感觉。除此之外，还有一点十分重要，你可以随时保存或分享演习场的内容。这在你学习的过程中遇到问题时变得十分有用，你可以通过<a href="https://forum.babylonjs.com/" rel="nofollow">Babylon.js 论坛</a>寻求帮助，官方的开发者和社区工作人员随时为你效劳。</p>
+<p>当我们在帮助你解决问题的时候，最好的方法就是你能将问题通过演练场分享出来，这样一来，我们就能快速地定位到问题的关键所在。所以，只要你遇到任何问题，保存你的演练场，分享到论坛。你一定会被我们迅雷不及掩耳的回复速度所震撼。</p>
+<p>说了这么多，既然演练场这重要，我们就来实操一下吧。</p>
+<p>新建一个页面打开下方链接：</p>
+<p><a href="https://playground.babylonjs.com/" rel="nofollow">Babylon.js Playground</a></p>
+<h3 id="创建你的第一个场景"><a class="heading-link" title="Permalink" aria-hidden="true" href="#创建你的第一个场景"><span>#</span></a>创建你的第一个场景</h3>
+<p>欢迎来到演习场，你只需要在左边修改/创建代码，就能在右边窗口看见实时运行结果。下面是我们为你提供的一个默认模版场景。快速地瞄一眼代码编辑窗口的绿色注释文字，这些文字会告诉你每一行代码的作用，贴心吧？</p>
+<p>最好的学习方法就是在敲代码，边敲边学，边学边敲。</p>
+<p>来让我们来尝试给这个默认场景做些调整。</p>
+<p>20-24行代码：</p>
+<pre class="language-typescript"><!-- HTML_TAG_START --><code class="language-typescript"><span class="token comment">// Our built-in 'sphere' shape. //引擎内建的球体。</span>
+<span class="token keyword">var</span> sphere <span class="token operator">=</span> <span class="token constant">BABYLON</span><span class="token punctuation">.</span>MeshBuilder<span class="token punctuation">.</span><span class="token function">CreateSphere</span><span class="token punctuation">(</span><span class="token string">"sphere"</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>diameter<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> segments<span class="token operator">:</span> <span class="token number">32</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span> scene<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Move the sphere upward 1/2 its height //将球体移动到它一半高度的位置,上面创建直径设置的是2，所以这里设置位置的y属性指为1</span>
+sphere<span class="token punctuation">.</span>position<span class="token punctuation">.</span>y <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<p>选中这几行代码，删掉它！</p>
+<p>你已经做出了第一个改动！</p>
+<p>感觉还不错吧？</p>
+<p>但…等一下，场景当中怎么没有发生任何事情？</p>
+<p>因为我们需要在修改了代码之后，需要重新启动演练场才能看到变更结果。</p>
+<p>你可以点击启动按钮</p>
+<p>![run.jpeg](<a href="https://cdn.hashnode.com/res/hashnode/image/upload/v1658421373423/9YF1Zc_hY.jpeg" rel="nofollow">https://cdn.hashnode.com/res/hashnode/image/upload/v1658421373423/9YF1Zc_hY.jpeg</a> align=“left”)</p>
+<p>，也可以按组合键<code>ALT+ENTER</code></p>
+<p>场景中的这个球不见了，神奇吧！</p>
+<p><a href="https://playground.babylonjs.com/#2KRNG9" rel="nofollow">点击查看Playground结果</a></p>
+<blockquote><p>如果你遇到任何问题，可以通过打开链接，对比自己的代码来查找错误</p></blockquote>
+<p>让我们来做一点别的改动。</p>
+<p>找到创建地面的代码所在的行，在下面加上如下代码：</p>
+<pre class="language-typescript"><!-- HTML_TAG_START --><code class="language-typescript"><span class="token keyword">let</span> groundMaterial <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name"><span class="token constant">BABYLON</span></span><span class="token punctuation">.</span><span class="token function">StandardMaterial</span><span class="token punctuation">(</span><span class="token string">"Ground Material"</span><span class="token punctuation">,</span> scene<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ground<span class="token punctuation">.</span>material <span class="token operator">=</span> groundMaterial<span class="token punctuation">;</span>
+ground<span class="token punctuation">.</span>material<span class="token punctuation">.</span>diffuseColor <span class="token operator">=</span> <span class="token constant">BABYLON</span><span class="token punctuation">.</span>Color3<span class="token punctuation">.</span><span class="token function">Red</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<p>再此运行（按组合键ALT+ENTER 或 点击播放按钮）</p>
+<p><a href="https://playground.babylonjs.com/#2KRNG9#1" rel="nofollow">点击查看Playground结果</a></p>
+<p>恭喜！你成功创建了一个新的材质，并将材质赋值给了地面，还将材质的漫反射通道设置为红色！</p>
+<p>很简单吧？如果你还有点懵也没关系，在这里我们需要知道的就是在左边输入代码，在右边察看结果😀</p>
+<p>接下来，让我们来再做第一小改动。</p>
+<p>找到这一行代码：</p>
+<pre class="language-typescript"><!-- HTML_TAG_START --><code class="language-typescript">ground<span class="token punctuation">.</span>material<span class="token punctuation">.</span>diffuseColor <span class="token operator">=</span> <span class="token constant">BABYLON</span><span class="token punctuation">.</span>Color3<span class="token punctuation">.</span><span class="token function">Red</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<p>用下面两行代码替换掉它：</p>
+<pre class="language-typescript"><!-- HTML_TAG_START --><code class="language-typescript"><span class="token keyword">let</span> groundTexture <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name"><span class="token constant">BABYLON</span></span><span class="token punctuation">.</span><span class="token function">Texture</span><span class="token punctuation">(</span>Assets<span class="token punctuation">.</span>textures<span class="token punctuation">.</span>checkerboard_basecolor_png<span class="token punctuation">.</span>rootUrl<span class="token punctuation">,</span> scene<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ground<span class="token punctuation">.</span>material<span class="token punctuation">.</span>diffuseTexture <span class="token operator">=</span> groundTexture<span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<p><a href="https://playground.babylonjs.com/#2KRNG9#2" rel="nofollow">点击查看Playground结果</a></p>
+<p>恭喜+1！你创建了你的第一个Texture并赋值给了地面材质。</p>
+<p>让我们继续，在你所有创建和设置地面相关的代码后面，敲几个回车，留出点空隙来展示演习场提供给我们的大杀器—提示模板。</p>
+<p>输入<code>import</code> 你将看到界面上生成了一个列表，列表里边是代码片段，每一个片段都是一个小的功能实现。</p>
+<p>让我们选择 <code>Import a Mesh w/Callback</code> ，再按下回车。</p>
+<p>如下代码将立即出现在你的输入框里：</p>
+<pre class="language-typescript"><!-- HTML_TAG_START --><code class="language-typescript"><span class="token constant">BABYLON</span><span class="token punctuation">.</span>SceneLoader<span class="token punctuation">.</span><span class="token function">ImportMesh</span><span class="token punctuation">(</span><span class="token string">"meshName"</span><span class="token punctuation">,</span> <span class="token string">"url to the mesh parent directory"</span><span class="token punctuation">,</span> <span class="token string">"Mesh filename.fileextension"</span><span class="token punctuation">,</span> scene<span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>newMeshes<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<p>我们需要在模版代码的基础上做一些小小的润色：</p>
+<ul><li><p>1.删掉<code>meshName</code>,注意需要保留引号。</p></li>
+<li><p>2.将<code>&quot;url to the mesh parent directory&quot;</code>（包括双引号） 替换为<code>Assets.meshes.Yeti.rootUrl</code></p></li>
+<li><p>3.将”Mesh filename.fileextension” （包括双引号）替换为<code>Assets.meshes.Yeti.filename</code></p></li>
+<li><p>4.在<code>BABYLON.SceneLoader.ImportMesh</code> 这一行下面，在<code>&quot;});&quot;</code>之前，输入：</p>
+<pre class="language-typescript"><!-- HTML_TAG_START --><code class="language-typescript">newMeshes<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>scaling <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name"><span class="token constant">BABYLON</span></span><span class="token punctuation">.</span><span class="token function">Vector3</span><span class="token punctuation">(</span><span class="token number">0.1</span><span class="token punctuation">,</span> <span class="token number">0.1</span><span class="token punctuation">,</span> <span class="token number">0.1</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre></li>
+<li><p>5.运行</p>
+<p><a href="https://playground.babylonjs.com/#2KRNG9#3" rel="nofollow">点击查看Playground结果</a></p></li></ul>
+<p>恭喜+1！你成功创建了一个.gltf格式的动画模型，并调整了它的缩放比例来适配地面。</p>
+<p>最后，让我们把创建好的场景动起来，让他跟随我们的鼠标滑动而调整镜头显示内容。</p>
+<p>删除5-9行的代码，输入createarc，在提示代码模版列表中选择 <code>Create An Arc Rotate Camera w/Degree</code>。</p>
+<p>再次运行，按住鼠标拖动或者触摸拖动场景，相机的视角就会跟随你的拖动和滑动变化啦。</p>
+<blockquote><p>本篇为翻译BabylonJS官方教程的开始,后续将陆续更新相关系列文章</p></blockquote>
+<p><a href="https://doc.babylonjs.com/journey/theFirstStep" rel="nofollow">原文链接</a></p>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>          
+        </item>
+      
+        <item>
+          <guid>https://sveltekit-static-blog-template.vercel.app//three-ts-ammo</guid>
+          <title>Three.js + Typescript + Ammo.js | A Tiny Shooter Game</title>
+          <description>null</description>
+          <link>https://sveltekit-static-blog-template.vercel.app//three-ts-ammo</link>
+          <pubDate>Sat, 24 Jul 2021 05:55:15 +0800</pubDate>
+          
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://sveltekit-static-blog-template.vercel.app//three-ts-ammo">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <h2 id="threejs--typescript--ammojs--a-tiny-shooter-game"><a class="heading-link" title="Permalink" aria-hidden="true" href="#threejs--typescript--ammojs--a-tiny-shooter-game"><span>#</span></a>Three.js + Typescript + Ammo.js | A Tiny Shooter Game</h2>
+<p>按照计划，利用Three.js和Ammo.js制作一个物理小游戏.
+通过 学习借鉴以下几个学习资源：</p>
+<ul><li><a href="https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene" rel="nofollow">Three.js官方文档</a></li>
+<li><a href="https://space.bilibili.com/1006136755?spm_id_from=333.337.0.0" rel="nofollow">Orillusion官方</a></li>
+<li><a href="https://www.bilibili.com/video/BV13Y4y1q7ZE?p=1" rel="nofollow">MIT 线性代数 1080p高清修复重制</a></li>
+<li><a href="https://en.threejs-university.com/" rel="nofollow">threejs-university</a></li>
+<li><a href="https://item.jd.com/1210283611.html" rel="nofollow">《WebGL编程指南》</a></li></ul>
+<p>对3D和Three.js形成了一个初步的认识。</p>
+<p>然后，基于<a href="https://github.com/hvidal/WebGL-Shooter" rel="nofollow">https://github.com/hvidal/WebGL-Shooter</a>项目，完成了一个类塔防的物理射击游戏。<a href="https://github.com/lizhiyu-me/three-ammo-defense-monster" rel="nofollow">Github地址</a></p>
+<p>![QQ图片20220525225341.png](<a href="https://cdn.hashnode.com/res/hashnode/image/upload/v1653490446005/K7LQBVVSS.png" rel="nofollow">https://cdn.hashnode.com/res/hashnode/image/upload/v1653490446005/K7LQBVVSS.png</a> align=“left”)</p>
+<hr>
+<h2 id="关键概念"><a class="heading-link" title="Permalink" aria-hidden="true" href="#关键概念"><span>#</span></a>关键概念</h2>
+<h4 id="两个主体世界"><a class="heading-link" title="Permalink" aria-hidden="true" href="#两个主体世界"><span>#</span></a>两个主体世界</h4>
+<ul><li>Three.js的视图世界 <code>THREE.Scene</code></li>
+<li>Ammo.js的物理世界 <code>Ammo.btDiscreteDynamicsWorld</code></li></ul>
+<p>通过设置THREE.Object3D 的userData.physicsBody为Ammo.btRigidBody,即使Three.js的物体添加到物理世界。</p>
+<p>每帧更新物理世界的坐标,旋转等各项数据到视图世界，完成位移碰撞的及时调整。</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">for (let i = 0; i &lt; len; i++) &#123;
+			var objThree = this.rigidBodies[i];
+			var motionState = objThree.userData.physicsBody.getMotionState();
+			if (motionState) &#123;
+				motionState.getWorldTransform(this.tempTransform);
+
+				let p = this.tempTransform.getOrigin();
+				objThree.position.set(p.x(), p.y(), p.z());
+
+				let q = this.tempTransform.getRotation();
+				objThree.quaternion.set(q.x(), q.y(), q.z(), q.w());
+			&#125;
+		&#125;</code><!-- HTML_TAG_END --></pre>
+<h3 id="基础内容"><a class="heading-link" title="Permalink" aria-hidden="true" href="#基础内容"><span>#</span></a>基础内容</h3>
+<p>－创建Three.js场景</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">        this.renderer = new THREE.WebGLRenderer();
+		this.renderer.setClearColor(clearColor);
+		this.renderer.setPixelRatio(window.devicePixelRatio);
+		this.renderer.setSize(window.innerWidth, window.innerHeight);
+		element.appendChild(this.renderer.domElement);
+		this.scene = new THREE.Scene();</code><!-- HTML_TAG_END --></pre>
+<ul><li>创建Ammo.js物理世界</li></ul>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">        const collisionConfiguration = new Ammo.btDefaultCollisionConfiguration();
+		const dispatcher = new Ammo.btCollisionDispatcher(collisionConfiguration);
+		const overlappingPairCache = new Ammo.btAxisSweep3(new Ammo.btVector3(-1000, -1000, -1000), new Ammo.btVector3(1000, 1000, 1000));
+		const solver = new Ammo.btSequentialImpulseConstraintSolver();
+
+		this.physicsWorld = new Ammo.btDiscreteDynamicsWorld(dispatcher, overlappingPairCache, solver, collisionConfiguration);
+		this.physicsWorld.setGravity(new Ammo.btVector3(0, -16, 0));</code><!-- HTML_TAG_END --></pre>
+<ul><li>射击逻辑</li></ul>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">shoot() &#123;
+		this.raycaster.setFromCamera(this.screenCenter, this.camera);
+
+		this.pos.copy(this.raycaster.ray.direction);
+		this.pos.add(this.raycaster.ray.origin);
+		this.pos.setZ(this.pos.z - 10);
+
+		const ball = this.factory.createSphere(this.radius, this.mass, this.pos, this.quat, this.ballMaterial);
+		ball.castShadow = true;
+		ball.receiveShadow = true;
+
+		const body = ball.userData.physicsBody;
+		this.pos.copy(this.raycaster.ray.direction);
+		this.pos.multiplyScalar(160);
+//调整子弹速度
+		body.setLinearVelocity(new Ammo.btVector3(this.pos.x, this.pos.y, this.pos.z));
+	&#125;</code><!-- HTML_TAG_END --></pre>
+<hr>
+<h3 id="增加内容"><a class="heading-link" title="Permalink" aria-hidden="true" href="#增加内容"><span>#</span></a>增加内容:</h3>
+<ul><li>连击实现</li></ul>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">//鼠标按下之后，间隔时间超过0.2秒即射击一次
+if (isMouseDowning &amp;&amp; duration &gt; 0.2) &#123;
+				duration = 0;
+				mouseShooter.shoot();
+			&#125;</code><!-- HTML_TAG_END --></pre>
+<ul><li>计时作为最终的游戏得分</li></ul>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">function recordTotalTime() &#123;
+			if (beginTime == 0) &#123;
+				beginTime = new Date().getTime();
+			&#125; else &#123;
+				let _currentTime = new Date().getTime();
+				totalTime += (_currentTime - beginTime);
+				document.getElementById(&#39;scoreBar&#39;).innerHTML = Math.floor(totalTime / 1000) + &quot;.&quot; + totalTime % 1000;
+				beginTime = _currentTime;
+			&#125;
+		&#125;</code><!-- HTML_TAG_END --></pre>
+<ul><li>游戏结束判断（物体在斜坡底部掉落）</li></ul>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">//斜坡底部的z坐标值计算
+var edgeZ = Math.cos(groundRotationX) * groundScaleZ / 2;</code><!-- HTML_TAG_END --></pre>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">//判断斜坡上的物体的z轴坐标是否大于斜坡底部的z坐标值
+	private checkGameOver(controls, edgeZ): boolean &#123;
+		const len = this.rigidBodies_slope.length;
+		for (let i = 0; i &lt; len; i++) &#123;
+			var objThree = this.rigidBodies_slope[i];
+			if (objThree.position.z &gt; edgeZ) &#123;
+				controls.enabled = false;
+				const message = document.getElementById(&#39;message&#39;);
+				const blocker = document.getElementById(&#39;blocker&#39;);
+				const gameOver = document.getElementById(&#39;gameOver&#39;);
+				blocker.style.display = &#39;none&#39;;
+				message.style.display = &#39;none&#39;;
+				gameOver.style.display = &#39;block&#39;;
+				lockPointer(controls);
+				document.getElementById(&#39;score&#39;).innerHTML = document.getElementById(&#39;scoreBar&#39;).innerHTML;
+				this.isGameOver = true;
+				return true;
+			&#125;
+		&#125;
+	&#125;</code><!-- HTML_TAG_END --></pre>
+<p>没想到用three.js和ammo.js做一个小DEMO会花这么多时间去学习,通过这个学习的过程也了解到了3D和物理相关的知识在广度和深度上都是值得去探索的，后面我也会继续在web3D的方向上继续探索学习。</p>
+<p>做难而正确的事情，让正确的事情持续发生。</p>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>          
+        </item>
+      
+        <item>
+          <guid>https://sveltekit-static-blog-template.vercel.app//starter-three</guid>
+          <title>Your  Very  First  Start  Of  Three.js</title>
+          <description>null</description>
+          <link>https://sveltekit-static-blog-template.vercel.app//starter-three</link>
+          <pubDate>Sat, 17 Jul 2021 05:55:15 +0800</pubDate>
+          
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://sveltekit-static-blog-template.vercel.app//starter-three">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <h2 id="your--very--first--start--of--threejs"><a class="heading-link" title="Permalink" aria-hidden="true" href="#your--very--first--start--of--threejs"><span>#</span></a>Your  Very  First  Start  Of  Three.js</h2>
+<p>使用Three.js创建一个3D网页一般都会经过以下几个步骤：</p>
+<ul><li>引入three.js库</li>
+<li>创建场景</li>
+<li>创建相机</li>
+<li>设置相机位置</li>
+<li>将相机添加到场景</li>
+<li>创建几何结构</li>
+<li>创建材质</li>
+<li>生成3D网格对象</li>
+<li>将3D对象添加到场景中</li>
+<li>创建渲染器</li>
+<li>设置渲染器尺寸</li>
+<li>将渲染器DOM节点添加到网页DOM树</li>
+<li>执行渲染器渲染方法</li></ul>
+<pre class="language-typescript"><!-- HTML_TAG_START --><code class="language-typescript"><span class="token comment">//引入three.js库</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> <span class="token constant">THREE</span> <span class="token keyword">from</span> <span class="token string">'three'</span><span class="token punctuation">;</span>
+
+<span class="token comment">//创建场景</span>
+<span class="token keyword">let</span> scene <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name"><span class="token constant">THREE</span></span><span class="token punctuation">.</span><span class="token function">Scene</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//创建相机</span>
+<span class="token keyword">let</span> camera <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name"><span class="token constant">THREE</span></span><span class="token punctuation">.</span><span class="token function">PerspectiveCamera</span><span class="token punctuation">(</span><span class="token number">75</span><span class="token punctuation">,</span> window<span class="token punctuation">.</span>innerWidth <span class="token operator">/</span> window<span class="token punctuation">.</span>innerHeight<span class="token punctuation">,</span> <span class="token number">.1</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//设置相机位置</span>
+camera<span class="token punctuation">.</span>position<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//将相机添加到场景</span>
+scene<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>camera<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//创建几何结构</span>
+<span class="token keyword">let</span> boxGeometry <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name"><span class="token constant">THREE</span></span><span class="token punctuation">.</span><span class="token function">BoxGeometry</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//创建材质</span>
+<span class="token keyword">let</span> boxMaterial <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name"><span class="token constant">THREE</span></span><span class="token punctuation">.</span><span class="token function">MeshBasicMaterial</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span> color<span class="token operator">:</span> <span class="token number">0x00ff00</span> <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//生成3D网格对象</span>
+<span class="token keyword">let</span> boxMesh <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name"><span class="token constant">THREE</span></span><span class="token punctuation">.</span><span class="token function">Mesh</span><span class="token punctuation">(</span>boxGeometry<span class="token punctuation">,</span> boxMaterial<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//将3D对象添加到场景中</span>
+scene<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>boxMesh<span class="token punctuation">)</span>
+
+<span class="token comment">//创建渲染器</span>
+<span class="token keyword">let</span> renderer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name"><span class="token constant">THREE</span></span><span class="token punctuation">.</span><span class="token function">WebGLRenderer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//设置渲染器尺寸</span>
+renderer<span class="token punctuation">.</span><span class="token function">setSize</span><span class="token punctuation">(</span>window<span class="token punctuation">.</span>innerWidth<span class="token punctuation">,</span> window<span class="token punctuation">.</span>innerHeight<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//将渲染器DOM节点添加到网页DOM树</span>
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>renderer<span class="token punctuation">.</span>domElement<span class="token punctuation">)</span>
+<span class="token comment">//执行渲染器渲染方法</span>
+renderer<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>scene<span class="token punctuation">,</span> camera<span class="token punctuation">)</span>
+</code><!-- HTML_TAG_END --></pre>
+<p>渲染结果：</p>
+<p>![Screenshot 2022-08-10 231635.png](<a href="https://cdn.hashnode.com/res/hashnode/image/upload/v1660144621974/4fSB9gMQ1p.png" rel="nofollow">https://cdn.hashnode.com/res/hashnode/image/upload/v1660144621974/4fSB9gMQ1p.png</a> align=“left”)</p>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>          
+        </item>
+      
+        <item>
+          <guid>https://sveltekit-static-blog-template.vercel.app//pomelo</guid>
+          <title>Pomelo</title>
+          <description>null</description>
+          <link>https://sveltekit-static-blog-template.vercel.app//pomelo</link>
+          <pubDate>Sat, 10 Jul 2021 05:55:15 +0800</pubDate>
+          
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://sveltekit-static-blog-template.vercel.app//pomelo">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <h2 id="pomelo"><a class="heading-link" title="Permalink" aria-hidden="true" href="#pomelo"><span>#</span></a>Pomelo</h2>
+<ul><li>MMO 架构
+![mmo-arch.png](<a href="https://cdn.hashnode.com/res/hashnode/image/upload/v1660530447301/HZG8e2Xdi.png" rel="nofollow">https://cdn.hashnode.com/res/hashnode/image/upload/v1660530447301/HZG8e2Xdi.png</a>
+align=“left”)</li>
+<li>框架中的组件
+![pomelo-arch.png](<a href="https://cdn.hashnode.com/res/hashnode/image/upload/v1660528132891/eOSHlwwyg.png" rel="nofollow">https://cdn.hashnode.com/res/hashnode/image/upload/v1660528132891/eOSHlwwyg.png</a>
+align=“left”)</li>
+<li>服务器抽象
+![serverAbst.png](<a href="https://cdn.hashnode.com/res/hashnode/image/upload/v1660528130690/-pue5j7K2.png" rel="nofollow">https://cdn.hashnode.com/res/hashnode/image/upload/v1660528130690/-pue5j7K2.png</a>
+align=“left”)</li>
+<li>目录结构
+![serverAbsDir.png](<a href="https://cdn.hashnode.com/res/hashnode/image/upload/v1660530466307/lPdpIhUKb.png" rel="nofollow">https://cdn.hashnode.com/res/hashnode/image/upload/v1660530466307/lPdpIhUKb.png</a>
+align=“left”)</li>
+<li>请求／响应、广播示例
+![req-resp.png](<a href="https://cdn.hashnode.com/res/hashnode/image/upload/v1660528128116/M7_2QpqG-.png" rel="nofollow">https://cdn.hashnode.com/res/hashnode/image/upload/v1660528128116/M7_2QpqG-.png</a>
+align=“left”)</li>
+<li>RPC调用抽象
+![rpc.png](<a href="https://cdn.hashnode.com/res/hashnode/image/upload/v1660528124991/QoHoJFTEC.png" rel="nofollow">https://cdn.hashnode.com/res/hashnode/image/upload/v1660528124991/QoHoJFTEC.png</a>
+align=“left”)</li>
+<li>可插拔组件 ![components.png](
+<a href="https://cdn.hashnode.com/res/hashnode/image/upload/v1660528088852/be3kXe34s.png" rel="nofollow">https://cdn.hashnode.com/res/hashnode/image/upload/v1660528088852/be3kXe34s.png</a>
+align=“left”)</li></ul>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>          
+        </item>
+      
+        <item>
+          <guid>https://sveltekit-static-blog-template.vercel.app//synery</guid>
+          <title>Combine your computers with Synergy</title>
+          <description>null</description>
+          <link>https://sveltekit-static-blog-template.vercel.app//synery</link>
+          <pubDate>Sat, 03 Jul 2021 05:55:15 +0800</pubDate>
+          
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://sveltekit-static-blog-template.vercel.app//synery">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <h2 id="combine-your-computers-with-synergy"><a class="heading-link" title="Permalink" aria-hidden="true" href="#combine-your-computers-with-synergy"><span>#</span></a>Combine your computers with Synergy</h2>
+<p>I used to code on my Mac, but Mac run game engine editor so bad. So I have to work on two computers, one for coding, one for game engine for some game scene.
+It’s not convenient especially code and edit game scene in the same time.</p>
+<p>Synergy give me the answer, it’s awsome.</p>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>          
+        </item>
+      
+        <item>
+          <guid>https://sveltekit-static-blog-template.vercel.app//switch-proxy</guid>
+          <title>How To Set Net Proxy on Nintendo Switch & Switch 开启代理加速设置教程</title>
+          <description>null</description>
+          <link>https://sveltekit-static-blog-template.vercel.app//switch-proxy</link>
+          <pubDate>Tue, 29 Jun 2021 05:55:15 +0800</pubDate>
+          
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://sveltekit-static-blog-template.vercel.app//switch-proxy">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <h2 id="how-to-set-net-proxy-on-nintendo-switch--switch-开启代理加速设置教程"><a class="heading-link" title="Permalink" aria-hidden="true" href="#how-to-set-net-proxy-on-nintendo-switch--switch-开启代理加速设置教程"><span>#</span></a>How To Set Net Proxy on Nintendo Switch &amp; Switch 开启代理加速设置教程</h2>
+<p>众所周知，在中国买Switch一般都是买非国行版本（毕竟一个是小卖部，一个是超市，没得选😂）。</p>
+<p>然而不管是日版还是港版都会遇到一个非常棘手的问题，下载速度特别特别慢，慢到下载一个大作需要长达一天的时间，并且在下载的过程中还随时可能出现网络错误进而中断，导致前功尽弃，甚至怒砸游戏机，为了我们可爱的第九艺术的载体四肢健全，情绪稳定，下面我们就来介绍一下解决方案。</p>
+<p>目前解决方案主要有三种：</p>
+<ul><li>第一种方案：买实体卡，不用下载直接起飞开肝（你tm不是在说废话吗？逃…）</li>
+<li>第二种方案：购买加速服务，一般有包月 和
+包流量两种套餐（因为下载游戏一般都是临时性的，包月服务不是很适合，流量包的性价比也不是很高，所以我要隆重介绍第三种方案）</li>
+<li>第三种方案：铛铛铛（尬🤪），接下来就是我们要隆重介绍的内容了（前面的都是废话），不用买实体卡，不用另外买套餐，只要科学上网，就可以免费加速。</li></ul>
+<p>先上对比图：</p>
+<p>加速前：</p>
+<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1650898882578/FT3OClfMx.JPG" alt="IMG_3909.JPG">
+加速后：
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1650899126802/dRAp0N5fn.JPG" alt="IMG_3911.JPG"></p>
+<p>可以看到，下载速度提升了20几倍，直接起飞🛫️</p>
+<h3 id="物料准备"><a class="heading-link" title="Permalink" aria-hidden="true" href="#物料准备"><span>#</span></a>物料准备：</h3>
+<ul><li>Switch</li>
+<li>笔记本电脑</li>
+<li>科学上网装置（这里使用的是ClashX
+<a href="https://github.com/Fndroid/clash_for_windows_pkg" rel="nofollow">Windows 下载地址</a>，<a href="https://github.com/yichengchen/clashX/releases" rel="nofollow">Mac 下载地址</a>)</li>
+<li>科学上网服务商（自己有在用的梯子跳过此步骤，没有的话可以试试我用的这个，叫AgentNeo，比较小众，我已经用了好多年了，可以说是不管遇到什么大事小情，始终稳如老狗
+<a href="https://agneo.co/?rc=9gmtay3q" rel="nofollow">AgentNeo注册地址</a>）</li></ul>
+<h3 id="下面介绍步骤"><a class="heading-link" title="Permalink" aria-hidden="true" href="#下面介绍步骤"><span>#</span></a>下面介绍步骤：</h3>
+<ul><li><p>找到笔记本电脑ip和科学上网代理端口备用</p>
+<p>端口：可以在ClashX里查找，如下图所示，默认一般为7890
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1650898449982/zRxRr7oQm.png" alt="Screen Shot 2022-04-25 at 22.50.08.png">
+ip：Windows在cmd内输入ipconfig，Mac&amp;Linux在终端输入ifconfig查看</p></li>
+<li><p>确认笔记本电脑和Switch连入同一个Wifi</p></li>
+<li><p>打开Switch-设置-互联网-互联网设置-当前连接的网络-更改设置-代理服务器设置-打开-输入上一步找到的ip和端口-保存-连接到此网络</p></li></ul>
+<blockquote><p>如果你的移动设备上装有Shadowrocket，则可以在 <code>设置-代理-代理共享</code>
+里找到代理ip和端口，然后通过你的手机或平板进行代理加速</p></blockquote>
+<p>然后就愉快地玩耍吧</p>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>          
+        </item>
+      
+        <item>
+          <guid>https://sveltekit-static-blog-template.vercel.app//ssh-vscode</guid>
+          <title>Remote Development using SSH on VS Code</title>
+          <description>null</description>
+          <link>https://sveltekit-static-blog-template.vercel.app//ssh-vscode</link>
+          <pubDate>Tue, 22 Jun 2021 05:55:15 +0800</pubDate>
+          
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://sveltekit-static-blog-template.vercel.app//ssh-vscode">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <h2 id="remote-development-using-ssh-on-vs-code"><a class="heading-link" title="Permalink" aria-hidden="true" href="#remote-development-using-ssh-on-vs-code"><span>#</span></a>Remote Development using SSH on VS Code</h2>
+<blockquote><p>I have to say amazing after remote ssh on vs code. Debugging and preview
+remote on vs code is what I want for a long time. What a pity, it’s too late
+to meet 🤣.</p></blockquote>
+<p><em>The Visual Studio Code Remote - SSH extension allows you to open a remote
+folder on any remote machine, virtual machine, or container with a running SSH
+server and take full advantage of VS Code’s feature set. Once connected to a
+server, you can interact with files and folders anywhere on the remote
+filesystem.</em></p>
+<h3 id="step1-generate-an-ssh-key"><a class="heading-link" title="Permalink" aria-hidden="true" href="#step1-generate-an-ssh-key"><span>#</span></a>Step1: Generate an SSH Key</h3>
+<p>execute: <code>ssh-keygen</code></p>
+<p>output:</p>
+<code>Generating public/private rsa key pair.</code>
+<code>Enter file in which to save the key (/Users/user-name/.ssh/id_rsa):
+</code>input the absolute path here.
+<code>Enter passphrase (empty for no passphrase):</code>
+<p>Then, you got two file in your <code>.ssh</code> directory. Something like</p>
+<code>tutorial</code> and <code>tutorial.pub</code>.
+<h3 id="step2-copy-the-key-to-a-server"><a class="heading-link" title="Permalink" aria-hidden="true" href="#step2-copy-the-key-to-a-server"><span>#</span></a>Step2: Copy the key to a server</h3>
+<blockquote><p>Once an SSH key has been created, the ssh-copy-id command can be used to
+install it as an authorized key on the server. Once the key has been
+authorized for SSH, it grants access to the server without a password.</p></blockquote>
+<code>ssh-copy-id -i ~/.ssh/mykey user@host</code>
+<blockquote><p>Only the public key is copied to the server. The private key should never be
+copied to another machine.</p></blockquote>
+<h3 id="step3-install-vs-code-extension"><a class="heading-link" title="Permalink" aria-hidden="true" href="#step3-install-vs-code-extension"><span>#</span></a>Step3: Install VS Code extension</h3>
+<p>Download
+<a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh" rel="nofollow">Remote-SSH</a></p>
+<h3 id="step4create-a-config-file"><a class="heading-link" title="Permalink" aria-hidden="true" href="#step4create-a-config-file"><span>#</span></a>Step4:Create a config file</h3>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">Host aws-ec2 
+    HostName 188.188.1.8
+    User ubuntu
+    IdentityFile /Users/user-name/.ssh/file-name</code><!-- HTML_TAG_END --></pre>
+<ul><li>Host (aws-ec2) is just a name that will appear in VS Code. It can be any name.</li>
+<li>HostName is the server’s host or IP.</li>
+<li>User is the Ubuntu username.</li>
+<li>IdentityFile is the path to the private key.</li></ul>
+<h3 id="step5configure-in-vs-code"><a class="heading-link" title="Permalink" aria-hidden="true" href="#step5configure-in-vs-code"><span>#</span></a>Step5:Configure in VS Code</h3>
+<ul><li>Show all command to find remote-ssh
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1648022794029/EspPFbrLX.png" alt="Screen Shot 2022-03-23 at 15.55.57.png"></li>
+<li>Excute the Connect to Host</li></ul>
+<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1648022891947/BJyLSm7Dc.png" alt="Screen Shot 2022-03-23 at 15.58.21.png"></p>
+<ul><li><p>Configure SSH Hosts
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1648023023626/_TlWDnHiM.png" alt="Screen Shot 2022-03-23 at 16.00.48.png"></p></li>
+<li><p>Setting configure path
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1648022973080/7I55W6URy.png" alt="Screen Shot 2022-03-23 at 16.00.29.png"></p></li></ul>
+<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1648023404479/sgPmyCYvT.png" alt="Screen Shot 2022-03-23 at 16.01.03.png"></p>
+<ul><li>Excute the Connect to Host Select one you have configired.</li></ul>
+<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1648023568401/5bbDnDVqP.png" alt="Screen Shot 2022-03-23 at 16.03.19.png"></p>
+<p>Then, connected.
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1648023433958/rFVHxZNBP.png" alt="Screen Shot 2022-03-23 at 16.04.06.png"></p>
+<p>Enjoy remote developing, debug and preview locally with the power of VS Code.</p>
+<p>Thanks for your reading.</p>
+<p>Have a good day.</p>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>          
+        </item>
+      
+        <item>
+          <guid>https://sveltekit-static-blog-template.vercel.app//parcel</guid>
+          <title>Utilize Parcel  To Enjoy  TypeScrpit Out Of The Box</title>
+          <description>null</description>
+          <link>https://sveltekit-static-blog-template.vercel.app//parcel</link>
+          <pubDate>Tue, 15 Jun 2021 05:55:15 +0800</pubDate>
+          
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://sveltekit-static-blog-template.vercel.app//parcel">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <h2 id="utilize-parcel--to-enjoy--typescrpit-out-of-the-box"><a class="heading-link" title="Permalink" aria-hidden="true" href="#utilize-parcel--to-enjoy--typescrpit-out-of-the-box"><span>#</span></a>Utilize Parcel  To Enjoy  TypeScrpit Out Of The Box</h2>
+<blockquote><p>If you are code with TypeScript mostly, you may counter some hassles when running or debugging with tranditional web tools. Parcel may be the hassles killer.</p></blockquote>
+<ul><li><p>Zero config with parcel index.html</p></li>
+<li><p>Debug TS with soure map</p></li>
+<li><p>Hot reloading</p></li></ul>
+<p>and more amazing features <a href="https://parceljs.org/" rel="nofollow">https://parceljs.org/</a>.</p>
+<ul><li><p><code>mkdir parcel--starter-demo</code></p></li>
+<li><p><code>cd ./parcel--starter-demo</code></p></li>
+<li><p><code>yarn init -y </code> || <code>npm init -y</code></p></li>
+<li><p><code>yarn add parcel --dev</code> || <code>npm install -D parcel</code></p></li>
+<li><p><code>touch main.ts</code></p></li></ul>
+<pre class="language-typescript"><!-- HTML_TAG_START --><code class="language-typescript"><span class="token keyword">let</span> content_string<span class="token operator">:</span><span class="token builtin">string</span> <span class="token operator">=</span> <span class="token string">"Hello Parcel!"</span><span class="token punctuation">;</span>
+document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"content"</span><span class="token punctuation">)</span><span class="token operator">!</span><span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> content_string<span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<p><code>touch index.html</code></p>
+<pre class="language-html"><!-- HTML_TAG_START --><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>X-UA-Compatible<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>IE=edge<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Document<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>content<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>./main.ts<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>moudule<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre>
+<pre class="language-json"><!-- HTML_TAG_START --><code class="language-json"><span class="token punctuation">&#123;</span>
+  <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"parcel-demo"</span><span class="token punctuation">,</span>
+  <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"1.0.0"</span><span class="token punctuation">,</span>
+  <span class="token property">"main"</span><span class="token operator">:</span> <span class="token string">"index.js"</span><span class="token punctuation">,</span>
+  <span class="token property">"license"</span><span class="token operator">:</span> <span class="token string">"MIT"</span><span class="token punctuation">,</span>
+  <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">"dev"</span><span class="token operator">:</span><span class="token string">"parcel ./index.html"</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token property">"dependencies"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">"parcel"</span><span class="token operator">:</span> <span class="token string">"^2.7.0"</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
+<p><code>yarn start</code> || <code>npm run start</code></p>
+<p>So easy, is it?</p>
+<p>Enjoy coding.</p>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>          
+        </item>
+      
+        <item>
+          <guid>https://sveltekit-static-blog-template.vercel.app//npm-script</guid>
+          <title>The powerful and useful tool - NPM Scripts</title>
+          <description>null</description>
+          <link>https://sveltekit-static-blog-template.vercel.app//npm-script</link>
+          <pubDate>Tue, 08 Jun 2021 05:55:15 +0800</pubDate>
+          
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://sveltekit-static-blog-template.vercel.app//npm-script">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <h2 id="the-powerful-and-useful-tool---npm-scripts"><a class="heading-link" title="Permalink" aria-hidden="true" href="#the-powerful-and-useful-tool---npm-scripts"><span>#</span></a>The powerful and useful tool - NPM Scripts</h2>
+<blockquote><p>In the project which the series articles introduce, we should generate the script file from <code>.proto</code> file, debug by starting client and server process.  It’s not convenient to excute the command repeatly. The solution to make development simple is config the commands in npm scripts.</p></blockquote>
+<h3 id="what-is-a-npm-script"><a class="heading-link" title="Permalink" aria-hidden="true" href="#what-is-a-npm-script"><span>#</span></a>What is a npm script?</h3>
+<p>Npm allows scripting commands to be defined using the scripts field in the package.json file.</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">&#123;
+  // ...
+  &quot;scripts&quot;: &#123;
+    &quot;build&quot;: &quot;node build.js&quot;
+  &#125;
+&#125;</code><!-- HTML_TAG_END --></pre>
+<p>The above code is a fragment of the package.json file, and the scripts field in it is an object. Each of its properties corresponds to a script. For example, the script corresponding to the build command is node build.js.</p>
+<p>Use the npm run command from the command line to execute this script.</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">$ npm run build
+# is equivalent to executing
+$ node build.js</code><!-- HTML_TAG_END --></pre>
+<p>These scripts defined in package.json are called npm scripts. It has many advantages.</p>
+<p>Project-related scripts can be centralized in one place.
+Script commands of different projects can have the same external interface as long as they have the same function. We don’t need to know how to test your project,  just run npm run test.
+There are many helper functions that npm provides.
+To view all npm script commands for the current project,  you can use the npm run command without any arguments.</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">$ npm run</code><!-- HTML_TAG_END --></pre>
+<hr>
+<p>Bellow is the <code>package.json</code> <code>scripts </code>section in my series article project:</p>
+<pre class="language-json"><!-- HTML_TAG_START --><code class="language-json"><span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">"start-server"</span><span class="token operator">:</span> <span class="token string">"ts-node server/index.ts"</span><span class="token punctuation">,</span>
+    <span class="token property">"start-client"</span><span class="token operator">:</span> <span class="token string">"ts-node client/index.ts"</span><span class="token punctuation">,</span>
+    <span class="token property">"pbts"</span><span class="token operator">:</span> <span class="token string">"./share/proto/protoc --plugin=protoc-gen-ts_proto=./node_modules/.bin/protoc-gen-ts_proto --ts_proto_opt=esModuleInterop=true --ts_proto_out=. ./share/proto/card-game.proto"</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span></code><!-- HTML_TAG_END --></pre>
+<p>Before I config the scripts section, I should input the command in my terminal everytime. Now, I just input <code>npm run start-server</code> to establish a server and <code>npm run start-client</code>  to run a client.</p>
+<p>Npm scripts make my development easier and save much time for me.</p>
+<p>We can do almost all build tasks with npm scripts,  if you have interests, read the reference to get more.</p>
+<p>References: </p>
+<p>[https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/](<a href="https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/%EF%BC%89" rel="nofollow">https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/）</a> by Keith Cirkel</p>
+<p><a href="https://www.ruanyifeng.com/blog/2016/10/npm_scripts.html" rel="nofollow">https://www.ruanyifeng.com/blog/2016/10/npm_scripts.html</a> by Ruanyifeng</p>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>          
+        </item>
+      
+        <item>
+          <guid>https://sveltekit-static-blog-template.vercel.app//jest</guid>
+          <title>Unit Test Using Jest</title>
+          <description>null</description>
+          <link>https://sveltekit-static-blog-template.vercel.app//jest</link>
+          <pubDate>Mon, 31 May 2021 05:55:15 +0800</pubDate>
+          
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://sveltekit-static-blog-template.vercel.app//jest">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <h2 id="unit-test-using-jest"><a class="heading-link" title="Permalink" aria-hidden="true" href="#unit-test-using-jest"><span>#</span></a>Unit Test Using Jest</h2>
+<blockquote><p>Recently, I make a package about poker ruler logic from the project in the series articles which is writing. I need to check the correction of each poker rule when I change the code involved. So I add Jest to have a auto unit test.</p></blockquote>
+<ol><li>Install packages, for js, only jest is nessary below.</li></ol>
+<code>npm i -D jest ts-jest @types/jest</code>
+2. Jest config in package.json
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">//package.json
+
+&quot;jest&quot;: &#123;
+    &quot;moduleFileExtensions&quot;: [
+      &quot;ts&quot;,&quot;js&quot;
+    ],
+    &quot;transform&quot;: &#123;
+      &quot;\.(ts|tsx)$&quot;: &quot;&lt;rootDir&gt;/node_modules/ts-jest/preprocessor.js&quot;
+    &#125;,
+    &quot;testRegex&quot;: &quot;/__tests__/.*\.(ts)$&quot;
+  &#125;</code><!-- HTML_TAG_END --></pre>
+<p>3.Make a directory named ”<strong>test</strong>”, and make a file suffix with “_spec”.</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">src
+···
+├── __tests__
+│   └── ruler_spec.ts
+···</code><!-- HTML_TAG_END --></pre>
+<p>4.Write test code in ruler_spec.ts</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">import &#123; E_TYPE &#125; from &quot;../Config&quot;;
+import &#123;Ruler&#125; from &quot;../Ruler&quot;;
+
+var ruler = new Ruler();
+
+describe(&#39;type-check&#39;, () =&gt; &#123;
+    it(&#39;DOUBLE_JOKER&#39;, () =&gt; &#123;
+        expect(ruler.checkCardType([0x4e, 0x4f])).toBe(E_TYPE.DOUBLE_JOKER);
+    &#125;)
+    it(&#39;QUADRUPLE&#39;, () =&gt; &#123;
+        expect(ruler.checkCardType([0x02, 0x02, 0x02, 0x02])).toBe(E_TYPE.QUADRUPLE);
+    &#125;)
+    it(&#39;SINGLE&#39;, () =&gt; &#123;
+        expect(ruler.checkCardType([0x02])).toBe(E_TYPE.SINGLE);
+    &#125;)
+    it(&#39;QUADRUPLE_TAKE_TWO_DOUBLE&#39;, () =&gt; &#123;
+        expect(
+            ruler.checkCardType([0x03, 0x03, 0x03, 0x03, 0x04, 0x04, 0x05, 0x05])
+        ).toBe(E_TYPE.QUADRUPLE_TAKE_TWO_DOUBLE);
+    &#125;);
+    it(&#39;QUADRUPLE_TAKE_TWO_SINGLE&#39;, () =&gt; &#123;
+        expect(
+            ruler.checkCardType([0x03, 0x03, 0x03, 0x03, 0x04, 0x05])
+        ).toBe(E_TYPE.QUADRUPLE_TAKE_TWO_SINGLE);
+    &#125;);
+&#125;)
+
+describe(&#39;can-defeat&#39;, () =&gt; &#123;
+    it(&#39;DOUBLE_JOKER vs SINGLE&#39;, () =&gt; &#123;
+        expect(ruler.canDefeat([0x4e, 0x4f], [0x01], E_TYPE.SINGLE).can).toBe(true);
+    &#125;)
+&#125;)
+</code><!-- HTML_TAG_END --></pre>
+<p>Code structure like below is nessary:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">describe(&quot;desc-title&quot;,()=&gt;&#123;
+      it(&quot;unit-desc-name&quot;,()=&gt;&#123;
+          expect(function-you-want).toBe(res-you-want)
+    &#125;)
+&#125;)</code><!-- HTML_TAG_END --></pre>
+<p>If you get stuck, you can check <a href="https://github.com/lizhiyu-me/chinese-poker" rel="nofollow">the repo</a> anytime.</p>
+<p>Thanks for your reading.</p>
+<p>Have a good day.</p>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>          
+        </item>
+      
+        <item>
+          <guid>https://sveltekit-static-blog-template.vercel.app//epic-game-lib</guid>
+          <title>Three Ways To Show Your Games Back In Epic Launcher</title>
+          <description>null</description>
+          <link>https://sveltekit-static-blog-template.vercel.app//epic-game-lib</link>
+          <pubDate>Tue, 18 May 2021 05:55:15 +0800</pubDate>
+          
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://sveltekit-static-blog-template.vercel.app//epic-game-lib">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <h2 id="three-ways-to-show-your-games-back-in-epic-launcher--epic-游戏库不见了消失了这样找回来"><a class="heading-link" title="Permalink" aria-hidden="true" href="#three-ways-to-show-your-games-back-in-epic-launcher--epic-游戏库不见了消失了这样找回来"><span>#</span></a>Three Ways To Show Your Games Back In Epic Launcher &amp; Epic 游戏库不见了？消失了？这样找回来</h2>
+<p>时值51假期，我的一个白嫖了很多Epic商城游戏的朋友。
+他跟我说，昨天他打开Epic准备玩《文明6》的时候，突然发现游戏库里面的游戏都不见了，望着往日辛辛苦苦摆白嫖而来的整整100多个游戏,如今变得空空荡荡，他陷入了沉思，去各大网站搜索均无结果，扬言要卸载Epic以泄愤怒。</p>
+<p>当我得知此消息后，第一时间通过邮件的方式帮助他联系了Epic官方客服，没想很快就收到对方的回信，确定了本机原因后，对方给出了如下3个解决方案。
+最终我的朋友通过第一个解决方案找回了他的所有游戏，于是乎，我的朋友像往常一样，进入了他的游戏世界，快乐得像个孙子。</p>
+<h3 id="disable-fullscreen-optimization"><a class="heading-link" title="Permalink" aria-hidden="true" href="#disable-fullscreen-optimization"><span>#</span></a>Disable fullscreen optimization</h3>
+<ul><li>Shut down Epic Games launcher completely.</li>
+<li>Go into the directory where it is installed, right-click on the launcher exe
+file, and click properties (Epic
+Games\Launcher\Engine\Binaries\Win64\EpicGamesLauncher.exe).</li>
+<li>Go into the Compatibility tab.</li>
+<li>Make sure you check the “Disable fullscreen optimizations”.</li>
+<li>While you are there, you can also check “Run this program as an
+administrator”. Click Apply and Ok</li></ul>
+<h3 id="clear-your-launchers-webcache"><a class="heading-link" title="Permalink" aria-hidden="true" href="#clear-your-launchers-webcache"><span>#</span></a>Clear your launcher’s webcache</h3>
+<ul><li>Exit the Epic Games Launcher by right-clicking the system tray icon in the
+bottom-right corner, and then clicking Exit.</li>
+<li>Press Windows key + R, type “%localappdata%”, and then press Enter to open a
+File Explorer window.</li>
+<li>Open the Epic Games Launcher folder.</li>
+<li>Open the Saved folder.</li>
+<li>Click the webcache folder, and then delete it.</li>
+<li>If there is a folder called webcache_4147 that can be deleted as well</li>
+<li>Restart your computer, and then relaunch the Epic Games Launcher.</li></ul>
+<h3 id="reinstall-the-epic-games-launcher"><a class="heading-link" title="Permalink" aria-hidden="true" href="#reinstall-the-epic-games-launcher"><span>#</span></a>Reinstall the Epic Games Launcher</h3>
+<blockquote><p>Note: The following process will remove all of your installed games.</p></blockquote>
+<ul><li>Close the Epic Games launcher by right-clicking the system tray icon in the
+bottom right corner and then clicking Exit.</li>
+<li>Click Start.</li>
+<li>Type “cmd”, right-click Command Prompt, and then click Run as administrator.
+In the window that opens, type “sfc /scannow”, and then press Enter. This may
+take a little while.</li>
+<li>Restart your computer.</li>
+<li>Click Start.</li>
+<li>Type “Add or Remove Programs”, and then press Enter.</li>
+<li>Select Epic Games Launcher from the list of programs.</li>
+<li>Click Uninstall.</li>
+<li>Go to <a href="http://www.epicgames.com" rel="nofollow">www.epicgames.com</a> and click Get Epic Games in the top right corner to
+download the latest installer.</li></ul>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>          
+        </item>
+      
+        <item>
+          <guid>https://sveltekit-static-blog-template.vercel.app//enum-js</guid>
+          <title>Get Enums (Enumerations) In Javascript | Using JS Doc</title>
+          <description>null</description>
+          <link>https://sveltekit-static-blog-template.vercel.app//enum-js</link>
+          <pubDate>Tue, 11 May 2021 05:55:15 +0800</pubDate>
+          
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://sveltekit-static-blog-template.vercel.app//enum-js">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <h2 id="get-enums-enumerations-in-javascript--using-js-doc"><a class="heading-link" title="Permalink" aria-hidden="true" href="#get-enums-enumerations-in-javascript--using-js-doc"><span>#</span></a>Get Enums (Enumerations) In Javascript | Using JS Doc</h2>
+<blockquote><p>When I write javascript, I encounter a problem that there is no enum in javascript, and I accustomed to use enum to organise my code when write typescript. So I want to get a resolution to use enum in javascript.</p></blockquote>
+<h4 id="what-you-can-get"><a class="heading-link" title="Permalink" aria-hidden="true" href="#what-you-can-get"><span>#</span></a>What you can get:</h4>
+<ul><li>Enum in javascript</li>
+<li>Intellisense in IDE</li></ul>
+<h3 id="what-tsc-do-when-compile-ts-to-js-with-enum"><a class="heading-link" title="Permalink" aria-hidden="true" href="#what-tsc-do-when-compile-ts-to-js-with-enum"><span>#</span></a>What tsc do, when compile ts to js with enum.</h3>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">//.ts
+enum E1&#123;
+    A,B,C
+&#125;</code><!-- HTML_TAG_END --></pre>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">//.js
+var E1;
+(function (E1) &#123;
+    E1[E1[&quot;A&quot;] = 0] = &quot;A&quot;;
+    E1[E1[&quot;B&quot;] = 1] = &quot;B&quot;;
+    E1[E1[&quot;C&quot;] = 2] = &quot;C&quot;;
+&#125;)(E1 || (E1 = &#123;&#125;));</code><!-- HTML_TAG_END --></pre>
+<h3 id="define-a-function-to-generate-enum-like-tsc"><a class="heading-link" title="Permalink" aria-hidden="true" href="#define-a-function-to-generate-enum-like-tsc"><span>#</span></a>Define a function to generate enum like tsc</h3>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">//generateEnum.mjs
+export default function generateEnum(protoArr) &#123;
+    let _enum = &#123;&#125;;
+    for (let i = 0; i &lt; protoArr.length; i++) &#123;
+        const _protoName = protoArr[i];
+        const _cmdID = i;
+        _enum[_enum[_protoName] = _cmdID] = _protoName;
+    &#125;
+    return _enum;
+&#125;</code><!-- HTML_TAG_END --></pre>
+<h3 id="define-a-enum-in-dts"><a class="heading-link" title="Permalink" aria-hidden="true" href="#define-a-enum-in-dts"><span>#</span></a>Define a enum in <code>d.ts</code></h3>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">//type.d.ts
+export interface ENUM_CMD_FN &#123;
+    ready_C2S,
+    dealCards_S2C,
+    competeForLandLordRole_C2S,
+    playTurn,
+    playCards_C2S,
+    playCards_S2C,
+    notAllowedByRule_S2C,
+    gameEnd_S2
+&#125;</code><!-- HTML_TAG_END --></pre>
+<h3 id="import-and-define-type-in-javascript"><a class="heading-link" title="Permalink" aria-hidden="true" href="#import-and-define-type-in-javascript"><span>#</span></a>Import and define type in javascript</h3>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">/**
+ * @typedef &#123;import(&quot;./type&quot;).ENUM_CMD_FN&#125; ENUM_CMD_FN 
+ */</code><!-- HTML_TAG_END --></pre>
+<h3 id="type-and-get-your-enum-variable"><a class="heading-link" title="Permalink" aria-hidden="true" href="#type-and-get-your-enum-variable"><span>#</span></a>Type and get your enum variable</h3>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">import generateEnum from &quot;./generateEnum.mjs&quot;
+/** 
+ * @type ENUM_CMD_FN
+ */
+const ENUM_CMD_FN = generateEnum(
+    [
+        &quot;ready_C2S&quot;,
+        &quot;dealCards_S2C&quot;,
+        &quot;competeForLandLordRole_C2S&quot;,
+        &quot;playTurn&quot;,
+        &quot;playCards_C2S&quot;,
+        &quot;playCards_S2C&quot;,
+        &quot;notAllowedByRule_S2C&quot;,
+        &quot;gameEnd_S2C&quot;
+    ]);</code><!-- HTML_TAG_END --></pre>
+<p>Then,  the same as typescript.</p>
+<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1647939621415/S1EmPUiOo.gif" alt="enum-gif.gif"></p>
+<p>If you want to get the codes above, check the <a href="https://github.com/lizhiyu-me/js-enum-generator" rel="nofollow">demo code</a> .</p>
+<p>Thanks for your reading.</p>
+<p>Have a nice day.</p>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>          
+        </item>
+      
+        <item>
+          <guid>https://sveltekit-static-blog-template.vercel.app//diy-github-homepage</guid>
+          <title>DIY your own Github Home Page | Introduce a cool plugin</title>
+          <description>null</description>
+          <link>https://sveltekit-static-blog-template.vercel.app//diy-github-homepage</link>
+          <pubDate>Tue, 04 May 2021 05:55:15 +0800</pubDate>
+          
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://sveltekit-static-blog-template.vercel.app//diy-github-homepage">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <h2 id="diy-your-own-github-home-page--introduce-a-cool-plugin"><a class="heading-link" title="Permalink" aria-hidden="true" href="#diy-your-own-github-home-page--introduce-a-cool-plugin"><span>#</span></a>DIY your own Github Home Page | Introduce a cool plugin</h2>
+<ul><li>Create a repo which name the same as your github user name</li>
+<li>Go this site <a href="https://metrics.lecoq.io/" rel="nofollow">https://metrics.lecoq.io/</a><ul><li>Choose what you want to display</li>
+<li>Generate Mardown code</li>
+<li>Paste the code to <code>README.md</code> in your repo create above</li></ul></li></ul>
+<p>Then, you have a DIY metric in your github home page.</p>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>          
+        </item>
+      
+        <item>
+          <guid>https://sveltekit-static-blog-template.vercel.app//recap-1</guid>
+          <title>Just Do it, Recap On These Blog Days From 3 Months Ago & 写就对了, 回顾这三个月以来的博客时间🔖</title>
+          <description>null</description>
+          <link>https://sveltekit-static-blog-template.vercel.app//recap-1</link>
+          <pubDate>Mon, 03 May 2021 05:55:15 +0800</pubDate>
+          
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://sveltekit-static-blog-template.vercel.app//recap-1">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <h2 id="just-do-it-recap-on-these-blog-days-from-3-months-ago--写就对了-回顾这三个月以来的博客时间"><a class="heading-link" title="Permalink" aria-hidden="true" href="#just-do-it-recap-on-these-blog-days-from-3-months-ago--写就对了-回顾这三个月以来的博客时间"><span>#</span></a>Just Do it, Recap On These Blog Days From 3 Months Ago &amp; 写就对了, 回顾这三个月以来的博客时间🔖</h2>
+<p>自今年2月1号水了一篇自我介绍开始，还差几天就整整三个月了。</p>
+<h3 id="起因"><a class="heading-link" title="Permalink" aria-hidden="true" href="#起因"><span>#</span></a>起因</h3>
+<p>全职工作上的项目因为版号、人员的问题处于一个功能完整等待上线的阶段，所以这段时间有更多的时间写一些自己感兴趣的东西，把之前想实现的程序串起来跑一下。</p>
+<p>我是从小的时候开始就喜欢<strong>博客</strong>这个东西，小学初中就爱在QQ空间发一些有的没的现在看起来有点不知所云的文章。再后来微博之类的短文发布流行起来，qq空间慢慢变为小学生空间，微信开始完熟人圈子社交，我就基本上处于一个潜水的状态。发现Hashnode这个平台纯属意外，我甚至都忘了在哪里看到的，在这里你可以把博客绑定到自己的域名，可以把文章以Markdown的格式自动备份到Github，仅此两点就已深得我心，直接抛弃自建博客网站的异念。</p>
+<p>前前后后总共写了20篇，其中有一个”如何做一个多人联机卡牌游戏“系列还在持续更新中，大多数文章都是在代码实现的基础上完成的，文字内容很少，相当于是项目实现历程的文字记录。</p>
+<hr>
+<blockquote><p>上面废话了起因，下面来说说经过（承上启下）。</p></blockquote>
+<h3 id="经过体会感悟"><a class="heading-link" title="Permalink" aria-hidden="true" href="#经过体会感悟"><span>#</span></a>经过&amp;体会&amp;感悟</h3>
+<p>介于自己以前的浅薄人生经历，有几件事情是写了博客才有幸深刻体会</p>
+<ul><li>一件事情或者一个技能，知道、会用 与能够清晰地表达出来可以说是两回事。这中间存在一个知识的内化过程，以及发现提出问题-&gt;剖析问题-&gt;分解问题-&gt;解决问题的流程认知。</li>
+<li>持续地有规律的坚持一件事情，在还没形成习惯或一定程度的正向反馈的时候，是反人性的，我们都会以各种借口在各个阶段选择放弃。一般会经历前期的兴奋，中期的倦怠，然后就没有然后了，所谓“从入门到放弃”就是很好的诠释。</li>
+<li>内容的输出是二次输入，输出会倒逼输入。</li>
+<li>写也是想法产出的一部分，下笔或打字的时候是真的会促进思考的。</li>
+<li>随时记下灵感，然后组合成一个比较完整的内容。</li>
+<li>多看，多听。看博客看新闻看社交媒体看身边的人都在手机上干什么，听播客听视频听周围的人都在说些什么，能够发现很多意想不到的收获，比如对一个产品的需求。</li>
+<li>运动会产生多巴胺、血清素、内啡肽，能够提高大脑的活跃度。</li>
+<li>有意识的拓展认知的边界，通过网课、书籍、讲座了解一下跟自己所处完全不同行业，完全不同的职能的东西。通过这个动作，有时候会感受到一些好的东西，好的人的共性，要是能把握住这个共性，就很了不起了。</li>
+<li>不要所有的东西都泛泛而学，然后感觉自己什么都懂一丢丢，谭警官问你能不能懂的时候，你只会说，“只能懂一点点”，始终上不了成华大道。所以必须要有自己专注的领域，因为社会分工的大环境下，更需要专才，当然一专多能是更好的，但前提就是要有砖才行。在学习的前期，富有余力的情况下，可以考虑先广度后深度的模式。</li>
+<li>千万不要做个苦行僧。很多时候我们被一句话、一首歌、一本书、一个人点燃了，然后就想干票大的，自己要怎么怎么头悬梁锥刺股，九九八十一天之后让别人刮目相看。我们要尊重自然，尊重人是自然界的一个生物，不是超脱于三界之外的游神，按照生物喜欢的方式对待自己，认识自己，循循善诱，比如在准备搞事情之前来一杯甜甜的拿铁。</li>
+<li>肝不动了就休息，人在睡觉的时候大脑还没睡，大脑还在自主运转，对缓存区的进行整理，对垃圾信息进行回收，休息好了往往事半功倍。</li>
+<li>做能让自己兴奋的事情，比如我在写代码实现自己想实现的东西的时候就非常兴奋，看见别人的好项目的时候也是如此，分享自己的拙见的时候也会很明显的感觉到快乐，并且这种兴奋会正向反馈给你，促使你下一次继续做这个事情。这可能就是兴趣的定义吧。我看见好多博主，有一个共同的现象，集中在一段时间内发布了好多内容，后面更新的频率就很慢了，然后就消失了，跟我以前报健身房的经历一模一样。排除一些不可抗力因素，这当中应该是少了一点兴趣成分，要不然怎么爱因斯塔会说“兴趣是最好的老师”呢。</li>
+<li>避免掉入规整主义，完美主义的陷阱。感觉自己要开始搞一件大事了，要部署各种软硬件环境，被别人安利各种生产力工具，配上牛逼的电脑，椅子，桌子，键盘，鼠标，耳机，游戏机（逃…）。然后自己都忘了自己要干嘛了。先做起来再说，要把握核心，比如目标是向前走1000米，迈开步走就行了，什么跑鞋，跑袜，运动套装，智能设备，都可以在走的过程中按需添置。学会感受混沌之美，太极之美，中庸之美。鲁迅曾经说过：Just Do It.就是这个道理。</li>
+<li>要设定目标，并设定一个需要用劲儿才能实现的目标。唐太宗曾经说过“取法于上,仅得为中,取法于中,故为其下”，意思是你定个小目标相当于啥都得不到。</li>
+<li>遵循一个简单的原则，老子曾说，一生二，二生三，三生万物。牛逼的东西往往是简单的，考虑东西不要搞得过于复杂。</li>
+<li>人们大都喜闻乐见少年有成，这和喜欢中500万福利彩票一样。种一棵树最好的时间有两个，一个是10年前，一个是现在。认准了，喜欢就去做，什么时候都不晚。日拱一卒，功不唐捐。</li>
+<li>成年人，学会放低自己的身段，减少自作多情，大多数时候，一个人取得的成就很大程度上是时代造就的，不要太把自己当回事，顺势而为，实干兴邦。</li>
+<li>保持自信，甚至骗自己自信。</li>
+<li>坚持主见，批判接受别人的意见建议，辩证看待别人的得失。举个不恰当的例子，路人阿姨看见你撸铁的时候累的上气不接下气，说你这个太辛苦了，但她无法体会你在撸完后有多爽；你看见妹纸在开心地吃冰淇淋，但是你感受不到1个月后她节食天天吃全麦面包的无味。</li>
+<li>认识事物的本质，并保持初心。比如写个文章，虽然写得丑且简单，但目的始终是内容的输出,如果加上一些浏览量，点赞量，评论量之类的可以量化的数据上来的时候，往往会让人模糊认知，忘掉初心,仿佛不是在自己写,而是在写给别人看,然后就开始想如何迎合观众。</li></ul>
+<blockquote><p>一口气写了一大堆字，好像有点走偏了，那就尬结一下</p></blockquote>
+<h3 id="结果"><a class="heading-link" title="Permalink" aria-hidden="true" href="#结果"><span>#</span></a>结果</h3>
+<p>这三个月，相对来说过得很充实，对我产生了一些影响，比如像上面一样疯狂输出垃圾话的能力，这个过程中不仅仅是写博客本身，更多的是写博客带给我的思考，促发我去探索边界，归纳总结，产生新知。</p>
+<p>废话不多说，只要能产生自己与自己，或自己与他人之间有意义有深度的东西，就会去写，因为很爽。</p>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>          
+        </item>
+      
+        <item>
+          <guid>https://sveltekit-static-blog-template.vercel.app//https-host</guid>
+          <title>HTTPS On Your Own Host Domain For Free</title>
+          <description>null</description>
+          <link>https://sveltekit-static-blog-template.vercel.app//https-host</link>
+          <pubDate>Sun, 25 Apr 2021 05:55:15 +0800</pubDate>
+          
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://sveltekit-static-blog-template.vercel.app//https-host">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <h2 id="https-on-your-own-host-domain-for-free"><a class="heading-link" title="Permalink" aria-hidden="true" href="#https-on-your-own-host-domain-for-free"><span>#</span></a>HTTPS On Your Own Host Domain For Free</h2>
+<p>Nowaday, many platform open url with https in default for safe, if your website has no security certificate, it may be not  accessible.</p>
+<blockquote><p>To enable HTTPS on your website, you need to get a certificate (a type of file) from a Certificate Authority (CA). Let’s Encrypt is a CA. In order to get a certificate for your website’s domain from Let’s Encrypt, you have to demonstrate control over the domain.</p></blockquote>
+<p>Follow the instructions with <a href="https://certbot.eff.org/instructions" rel="nofollow">certbot</a> to get the certificate from  let’s encrypt</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">sudo http-server -a 0.0.0.0 -p 443 -S -K /etc/letsencrypt/live/www.dogdogame.com/privkey.pem -C /etc/letsencrypt/live/www.dogdogame.com/fullchain.pem</code><!-- HTML_TAG_END --></pre>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>          
+        </item>
+      
+        <item>
+          <guid>https://sveltekit-static-blog-template.vercel.app//create-npm-lib</guid>
+          <title>Create a library - Publish a npm package in Typescript</title>
+          <description>This section mainly uses react to implement UI views. Before this section, a UI view version has been implemented with cocos creator. In order to reuse the basic framework, we abstract the game logic and decouple the logic related to the view engine api.</description>
+          <link>https://sveltekit-static-blog-template.vercel.app//create-npm-lib</link>
+          <pubDate>Sat, 24 Apr 2021 05:55:15 +0800</pubDate>
+          <category>Tutorial:Make a multiplayer card game</category>
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://sveltekit-static-blog-template.vercel.app//create-npm-lib">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <h2 id="create-a-library---publish-a-npm-package-in-typescript"><a class="heading-link" title="Permalink" aria-hidden="true" href="#create-a-library---publish-a-npm-package-in-typescript"><span>#</span></a>Create a library - Publish a npm package in Typescript</h2>
+<blockquote><p>To make some reusable codes, create and publish a npm package is a good idea.</p></blockquote>
+<p>Below I’ll share base on my repo on github
+<a href="https://github.com/lizhiyu-me/chinese-poker" rel="nofollow">chinese-poker</a>.</p>
+<h2 id="init-npm-package"><a class="heading-link" title="Permalink" aria-hidden="true" href="#init-npm-package"><span>#</span></a>Init npm package</h2>
+<ul><li>create a directory<code>mkdir your-package-name</code>
+<code>cd your-package-name</code></li>
+<li>make a initialization (-y means no prompt question and all question to be the
+defualt value)</li></ul>
+<code>npm init -y</code>
+<p>Get a file tree like:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">.
+└── package.json</code><!-- HTML_TAG_END --></pre>
+<h2 id="write-codes-down"><a class="heading-link" title="Permalink" aria-hidden="true" href="#write-codes-down"><span>#</span></a>Write codes down:</h2>
+<p>below is my code files tree:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">src
+├── Config.ts
+├── Const.ts
+├── MetaProcessor.ts
+├── Ruler.ts
+├── SpecificGetFn.ts
+├── __tests__
+│   └── ruler_spec.ts
+└── utils
+    └── utils.ts</code><!-- HTML_TAG_END --></pre>
+<h3 id="intergrate-code-entry"><a class="heading-link" title="Permalink" aria-hidden="true" href="#intergrate-code-entry"><span>#</span></a>Intergrate code entry:</h3>
+<p>Make a file <code>index.ts</code> which we will assign it’s path to the bundle
+config. Input the stuffs you want to export:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">//index.ts
+export &#123;Ruler&#125; from &quot;./Ruler&quot;;
+export &#123;E_TYPE&#125; from &quot;./Config&quot;;</code><!-- HTML_TAG_END --></pre>
+<h2 id="bundle-the-codes"><a class="heading-link" title="Permalink" aria-hidden="true" href="#bundle-the-codes"><span>#</span></a>Bundle the codes:</h2>
+<p>It’s nessary to make a bundle, for easy consuming. The bundle tool can resolve
+the module format like Commonjs and ESModule for different usage and help us
+transpile typescript file and generate <code>d.ts </code> file by some plugins.</p>
+<blockquote><p>Rollup, Webpack, and Parcel are all module bundler tools, but the focus is
+different. The Rollup we are going to talk about is more suitable for building
+Library, while Webpack and Precel are more suitable for developing Application</p></blockquote>
+<p>Here We choose Rollup because it’s clean and easy to use.</p>
+<h3 id="install-rollup"><a class="heading-link" title="Permalink" aria-hidden="true" href="#install-rollup"><span>#</span></a>Install rollup</h3>
+<code>npm i -D rollup</code>
+<h3 id="create-file-rollupconfigjs"><a class="heading-link" title="Permalink" aria-hidden="true" href="#create-file-rollupconfigjs"><span>#</span></a>Create file <code>rollup.config.js</code></h3>
+<pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token keyword">import</span> typescript <span class="token keyword">from</span> <span class="token string">"rollup-plugin-typescript2"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> babel <span class="token keyword">from</span> <span class="token string">"rollup-plugin-babel"</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">&#123;</span>
+  <span class="token literal-property property">input</span><span class="token operator">:</span> <span class="token string">"src/index.ts"</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">output</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token literal-property property">file</span><span class="token operator">:</span> <span class="token string">"dist/index.esm.js"</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">format</span><span class="token operator">:</span> <span class="token string">"esm"</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">sourcemap</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">typescript</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">babel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<ul><li><code>rollup-plugin-babel</code> for compile typescript.</li>
+<li><code>rollup-plugin-typescript2</code> for generate <code>d.ts</code> file.</li>
+<li>set property <code>input</code> as your entry file.</li>
+<li>set property <code>output</code> to specify the output path and format.</li></ul>
+<h3 id="set-types-and-module-in-packagejson"><a class="heading-link" title="Permalink" aria-hidden="true" href="#set-types-and-module-in-packagejson"><span>#</span></a>Set types and module in package.json</h3>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">//package.json
+&#123;
+...
+&quot;types&quot;: &quot;index.d.ts&quot;,
+&quot;module&quot;: &quot;index.esm.js&quot;,
+...
+&#125;</code><!-- HTML_TAG_END --></pre>
+<h3 id="run-rollup"><a class="heading-link" title="Permalink" aria-hidden="true" href="#run-rollup"><span>#</span></a>Run rollup</h3>
+<code>rollup -c</code>
+<p>Then you can get the file tree like below:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">dist
+├── Config.d.ts
+├── Const.d.ts
+├── MetaProcessor.d.ts
+├── README.md
+├── Ruler.d.ts
+├── SpecificGetFn.d.ts
+├── __tests__
+│   └── ruler_spec.d.ts
+├── index.d.ts
+├── index.esm.js
+├── index.esm.js.map
+└── utils
+    └── utils.d.ts</code><!-- HTML_TAG_END --></pre>
+<h2 id="publish"><a class="heading-link" title="Permalink" aria-hidden="true" href="#publish"><span>#</span></a>Publish</h2>
+<ul><li>create a README.md file which is welcome for a easy describtion.</li>
+<li>copy README.md and package.json to dist.</li>
+<li><code>npm login</code>(If you have&#39;t a npm account, get one
+[npmjs](https://www.npmjs.com/signup))</li>
+<li><code>npm publish ./dist</code></li></ul>
+<h2 id="consuming-the-package"><a class="heading-link" title="Permalink" aria-hidden="true" href="#consuming-the-package"><span>#</span></a>Consuming the package:</h2>
+<code>npm install your-package-name </code>
+<p>Use it just like other package you used to.</p>
+<p>Thanks for your reading.</p>
+<p>Have a good day.</p>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>          
+        </item>
+      
+        <item>
+          <guid>https://sveltekit-static-blog-template.vercel.app//concurrently</guid>
+          <title>Concurrently</title>
+          <description>null</description>
+          <link>https://sveltekit-static-blog-template.vercel.app//concurrently</link>
+          <pubDate>Sat, 17 Apr 2021 05:55:15 +0800</pubDate>
+          
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://sveltekit-static-blog-template.vercel.app//concurrently">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <h2 id="concurrently-一键启动客户端和服务器"><a class="heading-link" title="Permalink" aria-hidden="true" href="#concurrently-一键启动客户端和服务器"><span>#</span></a>Concurrently 一键启动客户端和服务器</h2>
+<blockquote><p>在日常的全栈开发过程中,往往会同时启动服务器和客户端工程,分别启动服务器和客户端往往会不可避免的造成一定时间浪费和开发流程繁杂.本着能躺着就别坐着的原则,在万能的npm库中找到了<strong>concurrently</strong></p></blockquote>
+<h3 id="使用concurrently同时运行多个命令"><a class="heading-link" title="Permalink" aria-hidden="true" href="#使用concurrently同时运行多个命令"><span>#</span></a>使用<a href="https://www.npmjs.com/package/concurrently" rel="nofollow">concurrently</a>同时运行多个命令</h3>
+<p>如下面<code>package.json</code>内的脚本代码所示,concurrently将服务端及客户端项目的启动合并在一起了.妈妈再也不用担心我浪费时间在启动项目上了😊.</p>
+<pre class="language-json"><!-- HTML_TAG_START --><code class="language-json"><span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">"start"</span><span class="token operator">:</span> <span class="token string">"concurrently --kill-others-on-fail "npm run start-server" "npm run start-client""</span><span class="token punctuation">,</span>
+    <span class="token property">"start-server"</span><span class="token operator">:</span> <span class="token string">"ts-node server/src/index.ts"</span><span class="token punctuation">,</span>
+    <span class="token property">"start-client"</span><span class="token operator">:</span> <span class="token string">"cd client &amp;&amp; npm run start"</span>
+    <span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>          
+        </item>
+      
+        <item>
+          <guid>https://sveltekit-static-blog-template.vercel.app//cocos-creator-vs-react-vs-react-three-fiber</guid>
+          <title>Cocos Creator Vs React Vs React-Three-Fiber</title>
+          <description>null</description>
+          <link>https://sveltekit-static-blog-template.vercel.app//cocos-creator-vs-react-vs-react-three-fiber</link>
+          <pubDate>Sat, 10 Apr 2021 05:55:15 +0800</pubDate>
+          <category>engine select</category>
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://sveltekit-static-blog-template.vercel.app//cocos-creator-vs-react-vs-react-three-fiber">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <h2 id="cocos-creator-vs-react-vs-react-three-fiber-使用体验对比新项目该如何从中选择"><a class="heading-link" title="Permalink" aria-hidden="true" href="#cocos-creator-vs-react-vs-react-three-fiber-使用体验对比新项目该如何从中选择"><span>#</span></a>Cocos Creator Vs React Vs React-Three-Fiber 使用体验对比，新项目该如何从中选择</h2>
+<p>首先明确一点，下面针对标题中提到的三个东西的对比主要基于实现类似的功能，在开发体验上的偏感性思考，他们本身从根本上说设计定位就差异很大，甚至是包含扩展关系。</p>
+<h3 id="对比"><a class="heading-link" title="Permalink" aria-hidden="true" href="#对比"><span>#</span></a>对比</h3>
+<ul><li><p>Cocos Creator
+是一个比较完整的游戏引擎，有十分方便的可见即可得的可视化编辑器，和大量的开箱即用的可选的功能模块。</p></li>
+<li><p>React 是一个JS库，生态极其丰富。</p></li>
+<li><p>React-Three-Fiber (下面称R3F)是Three.js的React 渲染器。</p></li></ul>
+<p>用以上三个工具开发了老少皆宜，人尽皆知的斗地主之后，我逐渐喜欢上了React和R3F，主要有一下几个原因：</p>
+<ol><li>代码简洁，近乎极致的函数式编程，很多东西都是我之前自己想要去重构实现的，不谋而合的感觉很炸</li>
+<li>开发流程纯粹，VsCode一把梭，借助于HMR，代码改动后立马刷新界面，整个开发过程几乎没有界面的切换</li>
+<li>控制粒度更细，不管是界面视图界面的布局，还是样式，资源都可以很方便地用代码直接操控，而不用依赖任何其他工具</li>
+<li>坑基本被踩的差不多了，遇到的问题只要Google一下，解决方案如排山倒海之势，迎面而来</li>
+<li>生态繁荣，相关的各种类型的项目很多，最近就看到了好多基于Three.js实现的游戏，而且活跃度很高</li>
+<li>R3F也是在React上盖了薄如蝉翼的一层，主要就是把Three.js的一些类封装为react的组件，用jsx表现出来，这也使Three.js的代码变得非常简洁易读，整体上二者的结合带来了易用性又不失灵活度</li></ol>
+<p>可以说上面说的几条主要都是与自己更加熟悉的Cocos
+Creator以及之前使用的一些游戏引擎开发体验的对比。</p>
+<h3 id="结论"><a class="heading-link" title="Permalink" aria-hidden="true" href="#结论"><span>#</span></a>结论</h3>
+<ul><li>需要快速开发，适配多平台的项目，现阶段毫不犹豫，Cocos
+Creator，毕竟自家编辑器加持，开发、调试、发布一条龙服务，谁不爱呢</li>
+<li>做感兴趣的项目，实践学到的一些新东西，我会选react和R3F，之后我也会继续基于R3F开发一些小游戏，边学边练</li></ul>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://sveltekit-static-blog-template.vercel.app///images/posts/blog-posts.jpg"/>          
+        </item>
+      
+        <item>
           <guid>https://sveltekit-static-blog-template.vercel.app//make-a-multiplayer-card-game-episode-7</guid>
           <title>Make a multiplayer card game - Episode 7 | Create 3D graphical interface with Three.js</title>
           <description>Create 3D graphical interface with Three.js</description>
